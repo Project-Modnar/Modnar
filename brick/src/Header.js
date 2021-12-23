@@ -29,7 +29,7 @@ const Header = () => {
         {" "}
         {/* 헤더바 */}
         <div>
-          <img src="Brick Logo.png" />
+          <img src="brickLogo.png" />
         </div>
         <nav>
           <ul>
