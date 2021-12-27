@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Footer";
 import Header from "./Header";
 import Profile from "./Profile";
 import Upload from "./Upload";
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Profile />
       <Upload />
+      <Footer />
     </>
   );
 }
