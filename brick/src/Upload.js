@@ -50,8 +50,7 @@ function Upload() {
       </div>
 
       <div id="component">
-        <h2>설명</h2>
-        <textarea id="explain"></textarea>
+        <textarea id="description" placeholder="설명"></textarea>
       </div>
 
       <div id="component" className="price">

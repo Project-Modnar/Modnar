@@ -210,15 +210,20 @@ p {
   font-size: 2vh;
 }
 
-#explain {
-  width: 620px;
-  height: 200px;
-  margin-left: 7%;
+#description {
+  width: 690px;
+  height: 250px;
   font-size: large;
   border-radius: 15px;
   margin-top: 10px;
   outline: none;
   padding: 10px 10px 10px 10px;
+  border: none;
+}
+
+textarea::-webkit-input-placeholder {
+  font-size: 26px;
+  font-style: italic;
 }
 
 #price {
