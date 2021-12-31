@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 function Upload() {
   const [file, setFile] = useState([]);
-  const [fileUrl, setFileUrl] = useState(null);
   const onChange = (e) => {
     console.log(e.target.files.length);
 
@@ -37,12 +36,11 @@ function Upload() {
             )}
           </div>
         </label>
-        <input id="picture" type={"file"}></input>
       </div>
 
       <div id="title-component">
         <h2>제목</h2>
-        <input type={"text"} id="title"></input>
+        <input type={"text"} id="title" autoComplete="off"></input>
       </div>
 
       <div id="component">
@@ -55,7 +53,7 @@ function Upload() {
 
       <div id="component" className="price">
         <h2>가격</h2>
-        <input type={"text"} id="price"></input>
+        <input type={"text"} id="price" autoComplete="off"></input>
         <h2 id="won">원</h2>
       </div>
       <input type="button" id="uploadBtn" value={"업로드"}></input>
