@@ -29,26 +29,45 @@ export default function Post() {
         <button id="pen">
           <img src="pen.png" />
         </button>
+
         <div id="comment">
           <span id="comment-profile"></span>
           <p id="profile-name">❤경민❤</p>
           <p id="profile-time">13시간 전</p>
           <p id="comment-text">50000원 어떠신가여</p>
-          <button id="delete">
-            <img id="bin" src="bin.png" />
+          <button id="comment-btn">
+            <img id="adopt" src="adopt.png" alt="채택" />
           </button>
         </div>
+
         <div id="comment">
           <span id="comment-profile"></span>
           <p id="profile-name">❤경민❤</p>
           <p id="profile-time">13시간 전</p>
           <p id="comment-text">50000원 어떠신가여</p>
+          <button id="comment-btn">
+            <img id="adopt" src="notAdopt.png" alt="채택" />
+          </button>
         </div>
+
         <div id="comment">
           <span id="comment-profile"></span>
           <p id="profile-name">❤경민❤</p>
           <p id="profile-time">13시간 전</p>
           <p id="comment-text">50000원 어떠신가여</p>
+          <button id="comment-btn">
+            <img id="adopt" src="notAdopt.png" alt="채택" />
+          </button>
+        </div>
+
+        <div id="comment">
+          <span id="comment-profile"></span>
+          <p id="profile-name">❤경민❤</p>
+          <p id="profile-time">13시간 전</p>
+          <p id="comment-text">50000원 어떠신가여</p>
+          <button id="comment-btn">
+            <img id="bin" src="bin.png" alt="삭제" />
+          </button>
         </div>
       </section>
     </section>

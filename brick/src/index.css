@@ -482,7 +482,7 @@ textarea::-webkit-input-placeholder {
   width: 30px;
   height: 30px;
 }
-#delete {
+#comment-btn {
   width: 45px;
   height: 45px;
   margin-top: 30px;
@@ -490,4 +490,8 @@ textarea::-webkit-input-placeholder {
   outline: none;
   border: none;
   background-color: white;
+}
+#adopt {
+  width: 30px;
+  height: 38px;
 }
