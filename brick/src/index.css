@@ -9,6 +9,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "ImcreSoojin";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   margin: 0;
   font-family: "OTWelcomeRA";
@@ -70,9 +84,49 @@ Header ul {
 }
 
 Header ul h3 {
-  margin-bottom: 0;
+  padding-top: 5px;
+  font-size: 15px;
 }
 
+h2 {
+  font-family: "ImcreSoojin";
+}
+
+/*------------------------ suport-Header ------------------------*/
+@font-face {
+  font-family: "twayair";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#supHeader {
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 65%;
+  height: 50px;
+  background-color: #ffffff;
+  opacity: 86%;
+  border-bottom: #d44f32 1px solid;
+  padding-top: 60px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
+#supHeader ul {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+select {
+  font-family: "twayair";
+  border: none;
+  outline: none;
+}
+select option {
+  background-color: #fdf4f4;
+  font-size: 1.1em;
+}
 /*------------------------ Profile ------------------------*/
 #profile_background {
   position: absolute;
@@ -159,7 +213,9 @@ Header ul h3 {
 }
 
 h2 {
-  font-size: 28px;
+  font-family: "ImcreSoojin";
+  font-size: 24px;
+  color: #2e2e2e;
 }
 
 p {
@@ -170,7 +226,7 @@ p {
 
 #pictureBox {
   width: 630px;
-  height: 370px;
+  height: 360px;
   margin-left: 6%;
   margin-top: 20px;
   border: black 1px solid;
@@ -185,7 +241,6 @@ p {
 }
 #preview {
   height: 100%;
-  width: 100%;
 }
 
 .tit {
@@ -236,28 +291,30 @@ textarea::-webkit-input-placeholder {
 }
 
 #won {
-  margin-top: 6px;
   margin-left: 6px;
 }
 
 #uploadBtn {
-  width: 200px;
+  width: 180px;
   height: 40px;
   border: none;
   border-radius: 16px;
   background-color: #ffe0e0;
   margin-left: 80%;
-  font-size: 15px;
-  padding-top: 8px;
+  font-size: 13px;
   margin-bottom: 300px;
   transition: 0.3s;
+  font-family: "twayair";
 }
 
 #uploadBtn:hover {
   box-shadow: 5px 5px 5px #e4c5c5;
   transition: 0.4s;
 }
-
+#uploadBtn:active {
+  width: 177px;
+  background-color: #e9cbcb;
+}
 /*------------------------ Footer ------------------------*/
 #footer {
   background-image: url(../public/footer.png);
@@ -269,4 +326,168 @@ textarea::-webkit-input-placeholder {
 #footer-text {
   color: #000000;
   padding-top: 30px;
+}
+/*------------------------ Post ------------------------*/
+.post {
+  padding-top: 260px;
+  width: 100%;
+}
+
+.poster {
+  width: 620px;
+  height: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#post-profile {
+  display: flex;
+}
+
+#profile-picture {
+  width: 70px;
+  height: 70px;
+  border: black 1px solid;
+  border-radius: 15px;
+  margin-right: 14px;
+}
+
+#name {
+  font-size: 20px;
+  color: black;
+  padding-top: 8px;
+}
+
+#time {
+  margin-top: 4px;
+  font-size: 15px;
+}
+
+#post-picture {
+  width: 500px;
+  height: 500px;
+  border: black 1px solid;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.post-text {
+  width: 620px;
+  height: 340px;
+  border-top: #949494 1px solid;
+  border-bottom: #949494 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#post-title {
+  font-family: "Pretendard-Regular";
+  font-size: 2em;
+  padding-left: 50px;
+  padding-top: 60px;
+}
+#post-tag {
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+#post-description {
+  padding-left: 50px;
+  font-size: 1em;
+  color: #000000;
+}
+#post-price {
+  padding-left: 50px;
+  font-size: 3em;
+  color: #000000;
+}
+#priceJjim {
+  margin-top: 60px;
+  display: flex;
+  height: 50px;
+  width: 620px;
+}
+#jjim {
+  margin-left: 310px;
+  width: 60px;
+  height: 40px;
+  padding-top: 10px;
+}
+.comments {
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 200px;
+}
+#comment-input {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px 0 0 20px;
+  border: #727272 0.5px solid;
+  outline: none;
+  font-size: 1.4em;
+  padding: 5px 5px 0 10px;
+  margin-left: 13%;
+  border-right: none;
+}
+#pen {
+  width: 46px;
+  height: 47px;
+  position: absolute;
+  border-radius: 0 20px 20px 0;
+  border: #727272 0.5px solid;
+  padding-top: 4px;
+  padding-right: 12px;
+  border-left: none;
+  background-color: white;
+}
+#comment {
+  width: 600px;
+  height: 100px;
+  border-radius: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: flex;
+  box-shadow: rgb(131, 131, 131) 0 5px 20px;
+}
+#comment-profile {
+  width: 60px;
+  height: 60px;
+  border: black 1px solid;
+  border-radius: 1vh;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#profile-name {
+  font-size: 18px;
+  color: #000000;
+  margin-top: 26px;
+  margin-left: 10px;
+}
+#profile-time {
+  margin-top: 35px;
+  margin-left: 5px;
+}
+#comment-text {
+  color: #000000;
+  position: absolute;
+  margin-top: 56px;
+  margin-left: 110px;
+}
+#bin {
+  width: 30px;
+  height: 30px;
+}
+#delete {
+  width: 45px;
+  height: 45px;
+  margin-top: 30px;
+  margin-left: 300px;
+  outline: none;
+  border: none;
+  background-color: white;
 }
